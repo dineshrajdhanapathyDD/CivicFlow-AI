@@ -56,8 +56,10 @@ clustering → transparent prioritization → recommended action → measurable 
   report count, recency, public-infrastructure, unresolved) — not an opaque LLM guess.
 - **Ask CivicFlow:** a real tool-using agent on the **AWS Strands Agents SDK** that
   retrieves live data via tools before answering — never invents statistics.
-- **Community dashboard & lifecycle:** real totals, category breakdown, duplicate clusters;
-  staff advance issues NEW → VERIFIED → IN_PROGRESS → RESOLVED.
+- **Community dashboard & staff controls:** real totals, category breakdown, duplicate
+  clusters; **Staff controls** let authorized staff advance issues through their lifecycle
+  (NEW → AI_ANALYZED → VERIFIED → IN_PROGRESS → RESOLVED), gated by an admin key and audited
+  to CloudWatch — closing the loop from report to resolution.
 
 ## Why it fits #social-good / #community
 
@@ -122,6 +124,9 @@ Full script in [`DEMO.md`](DEMO.md). ~3-minute flow: submit a report → see mul
 analysis with separated evidence → watch related reports become one prioritized issue →
 ask the agent a question answered from live data → advance the issue through its lifecycle →
 see the dashboard update.
+
+Screenshots of every screen are in [`screenshots/`](screenshots/) (see its README for
+captions).
 
 ## Repository
 

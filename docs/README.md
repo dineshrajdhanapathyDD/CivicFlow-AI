@@ -14,6 +14,9 @@ Project overview and quick start live in the root [`../README.md`](../README.md)
 - [DEMO.md](DEMO.md) — demo script and talking points
 - [CODING_AGENT_EVIDENCE.md](CODING_AGENT_EVIDENCE.md) — how CivicFlow was built with Kiro
 - [SUBMISSION.md](SUBMISSION.md) — Builder Center submission content (tags, pitch, checklist)
+- [BUILDER_CENTER_FIELDS.md](BUILDER_CENTER_FIELDS.md) — ready-to-paste field text + body
+- [PROOF_OF_CONNECTION.md](PROOF_OF_CONNECTION.md) — documented coding-agent → AWS proof
+- [cover.png](cover.png) / [cover.svg](cover.svg) — 1200×675 cover image
 
 ## Specs
 

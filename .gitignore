@@ -25,3 +25,7 @@ infra/cdk.out/
 
 # CDK
 cdk.context.json
+infra/cdk-outputs.json
+
+# Playwright
+.playwright-mcp/

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="'Cascadia Code','Consolas','SFMono-Regular',Menlo,monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3b38"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="40" y="48" font-size="24" font-weight="700" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif">CivicFlow AI — Proof of Coding-Agent → AWS Connection</text>
+  <text x="40" y="74" font-size="14" fill="#bfeee8" font-family="Segoe UI, Arial, sans-serif">Captured live from the Kiro coding agent via the AWS MCP · 2026-10-01 09:32 UTC</text>
+
+  <!-- Terminal window -->
+  <rect x="40" y="100" width="1120" height="620" rx="12" fill="#0b1020"/>
+  <rect x="40" y="100" width="1120" height="38" rx="12" fill="#1b2440"/>
+  <rect x="40" y="124" width="1120" height="14" fill="#1b2440"/>
+  <circle cx="66" cy="119" r="7" fill="#ff5f56"/>
+  <circle cx="90" cy="119" r="7" fill="#ffbd2e"/>
+  <circle cx="114" cy="119" r="7" fill="#27c93f"/>
+  <text x="600" y="124" text-anchor="middle" font-size="13" fill="#8aa0c6">kiro agent — aws (us-east-1)</text>
+
+  <!-- Terminal body -->
+  <g font-size="15">
+    <text x="64" y="176" fill="#58e6a8">$ aws sts get-caller-identity</text>
+    <text x="64" y="202" fill="#dfe8f5">{</text>
+    <text x="88" y="224" fill="#dfe8f5">"Account": <tspan fill="#ffd479">"************"</tspan>,  <tspan fill="#8aa0c6">// masked for security</tspan></text>
+    <text x="88" y="246" fill="#dfe8f5">"Arn": <tspan fill="#ffd479">"arn:aws:iam::************:user/********"</tspan>,</text>
+    <text x="88" y="268" fill="#dfe8f5">"UserId": <tspan fill="#ffd479">"********"</tspan></text>
+    <text x="64" y="290" fill="#dfe8f5">}</text>
+
+    <text x="64" y="328" fill="#58e6a8">$ aws cloudformation describe-stacks --stack-name CivicFlowStack</text>
+    <text x="88" y="352" fill="#dfe8f5">Status: <tspan fill="#58e6a8" font-weight="700">UPDATE_COMPLETE</tspan></text>
+    <text x="88" y="374" fill="#dfe8f5">SiteUrl:  <tspan fill="#7fd4ff">https://d2ei9x9420h4oc.cloudfront.net</tspan></text>
+    <text x="88" y="396" fill="#dfe8f5">ApiUrl:   <tspan fill="#7fd4ff">https://zwasktmpei.execute-api.us-east-1.amazonaws.com</tspan></text>
+    <text x="88" y="418" fill="#dfe8f5">Table:    <tspan fill="#ffd479">civicflow</tspan>   ·   Distribution: <tspan fill="#ffd479">E27GW360BEW7AT</tspan> (Deployed, enabled)</text>
+
+    <text x="64" y="456" fill="#58e6a8">$ aws lambda list-functions  (CivicFlow)</text>
+    <text x="88" y="480" fill="#dfe8f5">ApiFn       <tspan fill="#ffd479">nodejs22.x</tspan>   (reports · analyze · issues · dashboard · presign)</text>
+    <text x="88" y="502" fill="#dfe8f5">AskAgentFn  <tspan fill="#ffd479">python3.12</tspan>  (AWS Strands Agents SDK · POST /ask)</text>
+
+    <text x="64" y="540" fill="#58e6a8">$ aws dynamodb scan --table-name civicflow  (entity counts)</text>
+    <text x="88" y="564" fill="#dfe8f5">reports: <tspan fill="#58e6a8" font-weight="700">10</tspan>   issues: <tspan fill="#58e6a8" font-weight="700">8</tspan>   links: <tspan fill="#58e6a8" font-weight="700">10</tspan>   <tspan fill="#8aa0c6">// reports &gt; issues → 3 pothole reports clustered into 1 issue</tspan></text>
+
+    <text x="64" y="602" fill="#58e6a8">$ curl .../health</text>
+    <text x="88" y="626" fill="#dfe8f5">{"ok": true, "data": {"status": <tspan fill="#58e6a8">"up"</tspan>}}   <tspan fill="#58e6a8" font-weight="700">200 OK</tspan></text>
+  </g>
+
+  <!-- Footer badge -->
+  <rect x="64" y="656" width="430" height="40" rx="20" fill="#0d9488"/>
+  <text x="84" y="682" font-size="15" font-weight="700" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif">✓ Live on AWS · built with a coding agent</text>
+  <text x="1136" y="682" text-anchor="end" font-size="13" fill="#bfeee8" font-family="Segoe UI, Arial, sans-serif">#social-good · #community</text>
+</svg>

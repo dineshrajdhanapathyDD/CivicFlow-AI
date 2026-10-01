@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="0.55" stop-color="#0d9488"/>
+      <stop offset="1" stop-color="#0b7f78"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3faf9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- subtle corner mesh accents -->
+  <circle cx="1080" cy="80" r="220" fill="#ffffff" opacity="0.06"/>
+  <circle cx="120" cy="640" r="260" fill="#042f2c" opacity="0.18"/>
+
+  <!-- Brand mark -->
+  <g>
+    <rect x="80" y="78" width="56" height="56" rx="14" fill="#ffffff"/>
+    <text x="108" y="117" text-anchor="middle" font-size="34" font-weight="800" fill="#0d9488">C</text>
+    <text x="152" y="108" font-size="30" font-weight="800" fill="#ffffff">CivicFlow</text>
+    <text x="152" y="108" font-size="30" font-weight="800" fill="#ffffff"> </text>
+    <text x="326" y="108" font-size="18" font-weight="700" fill="#c7f0ea">AI</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="80" y="250" font-size="62" font-weight="800" fill="#ffffff">Understand the problem,</text>
+  <text x="80" y="320" font-size="62" font-weight="800" fill="#ffffff">not the complaint count.</text>
+
+  <!-- Subhead -->
+  <text x="80" y="372" font-size="23" fill="#dff5f1">Multimodal community issue-to-action platform on AWS.</text>
+  <text x="80" y="404" font-size="23" fill="#dff5f1">Text + photo → AI evidence fusion → one prioritized issue → action.</text>
+
+  <!-- Pipeline chips -->
+  <g font-size="15" font-weight="700">
+    <g>
+      <rect x="80" y="448" width="150" height="40" rx="20" fill="#ffffff" opacity="0.14"/>
+      <text x="155" y="474" text-anchor="middle" fill="#ffffff">Report</text>
+    </g>
+    <g>
+      <rect x="246" y="448" width="188" height="40" rx="20" fill="#ffffff" opacity="0.14"/>
+      <text x="340" y="474" text-anchor="middle" fill="#ffffff">Analyze (Nova)</text>
+    </g>
+    <g>
+      <rect x="450" y="448" width="150" height="40" rx="20" fill="#ffffff" opacity="0.14"/>
+      <text x="525" y="474" text-anchor="middle" fill="#ffffff">Cluster</text>
+    </g>
+    <g>
+      <rect x="616" y="448" width="166" height="40" rx="20" fill="#ffffff" opacity="0.14"/>
+      <text x="699" y="474" text-anchor="middle" fill="#ffffff">Prioritize</text>
+    </g>
+    <g>
+      <rect x="798" y="448" width="150" height="40" rx="20" fill="#ffffff" opacity="0.14"/>
+      <text x="873" y="474" text-anchor="middle" fill="#ffffff">Act</text>
+    </g>
+  </g>
+
+  <!-- AWS services strip -->
+  <text x="80" y="560" font-size="15" font-weight="700" fill="#aee6df" letter-spacing="1">BUILT ON AWS</text>
+  <text x="80" y="588" font-size="17" fill="#eafaf8">Bedrock (Nova) · Rekognition · Lambda · API Gateway · DynamoDB · S3 · CloudFront · Strands Agents</text>
+
+  <!-- Tags badge card -->
+  <g>
+    <rect x="860" y="520" width="260" height="96" rx="16" fill="url(#card)"/>
+    <text x="884" y="556" font-size="16" font-weight="800" fill="#0f766e">#social-good</text>
+    <text x="884" y="584" font-size="16" font-weight="800" fill="#0f766e">#community</text>
+    <text x="884" y="606" font-size="12" fill="#5a6b7b">AWS Zero to Shipped</text>
+  </g>
+
+  <!-- tagline footer -->
+  <text x="80" y="636" font-size="14" fill="#bfeee8" font-style="italic">CivicFlow doesn't count complaints. It understands the problem behind them.</text>
+</svg>

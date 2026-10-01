@@ -39,6 +39,9 @@ issue clustering → prioritization → recommended action → measurable commun
   invented statistics.
 - **Community dashboard** — totals, category breakdown, status distribution, and duplicate
   clusters from real DynamoDB data.
+- **Staff controls (closing the loop)** — authorized staff advance an issue through its
+  lifecycle (NEW → AI_ANALYZED → VERIFIED → IN_PROGRESS → RESOLVED), gated by an admin key
+  and audited to CloudWatch, so the community can track real progress to resolution.
 
 ## Architecture (serverless on AWS)
 
@@ -58,6 +61,14 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`docs/AI_PIPELINE.md`](docs
 and [`docs/API.md`](docs/API.md) for detail. The diagram above is also available as an
 editable draw.io file: [`docs/architecture.drawio`](docs/architecture.drawio) (open in
 [diagrams.net](https://app.diagrams.net)).
+
+## Screenshots
+
+| Dashboard | Report + AI analysis | Issue cluster |
+|---|---|---|
+| ![Dashboard](docs/screenshots/01-dashboard.png) | ![Report detail with AI analysis](docs/screenshots/05-report-detail-ai.png) | ![Issue detail — 3-report cluster](docs/screenshots/04-issue-detail-cluster.png) |
+
+More in [`docs/screenshots/`](docs/screenshots/) (report form, issues list, Ask CivicFlow).
 
 ## AWS services
 
@@ -154,6 +165,11 @@ CivicFlow was built with the Kiro coding agent using a spec-driven workflow. See
 [`docs/CODING_AGENT_EVIDENCE.md`](docs/CODING_AGENT_EVIDENCE.md) for how the agent generated the architecture, specs, code, AWS
 integration, tests, and deployment, and how it diagnosed and fixed a real production bug.
 
+## Contributing
+
+Contributions are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for setup, conventions,
+required checks, and the pull request process.
+
 ## License
 
-MIT.
+Licensed under the [MIT License](LICENSE) — Copyright (c) 2026 DineshRaj Dhanapathy@DD.
