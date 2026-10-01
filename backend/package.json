@@ -1,0 +1,28 @@
+{
+  "name": "civicflow-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "seed": "tsx src/scripts/seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.687.0",
+    "@aws-sdk/client-dynamodb": "^3.687.0",
+    "@aws-sdk/client-rekognition": "^3.687.0",
+    "@aws-sdk/client-s3": "^3.687.0",
+    "@aws-sdk/lib-dynamodb": "^3.687.0",
+    "@aws-sdk/s3-request-presigner": "^3.687.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.1"
+  }
+}

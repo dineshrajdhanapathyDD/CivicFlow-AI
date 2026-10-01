@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/*
+  CivicFlow design language — trust-first civic product.
+  One locked accent (civic teal), neutral slate base, high-contrast text.
+  System font stack for reliability + speed (no external font blocking render).
+*/
+@theme {
+  --color-ink: #0f172a;        /* slate-900 text */
+  --color-ink-soft: #475569;   /* slate-600 body */
+  --color-line: #e2e8f0;       /* slate-200 borders */
+  --color-surface: #ffffff;
+  --color-canvas: #f8fafc;     /* slate-50 page */
+  --color-accent: #0d9488;     /* teal-600 — the single locked accent */
+  --color-accent-strong: #0f766e;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Severity / status color mapping used across cards and badges. */
+.sev-LOW { color: #0369a1; background: #e0f2fe; }
+.sev-MEDIUM { color: #b45309; background: #fef3c7; }
+.sev-HIGH { color: #c2410c; background: #ffedd5; }
+.sev-CRITICAL { color: #b91c1c; background: #fee2e2; }

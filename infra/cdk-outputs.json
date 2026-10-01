@@ -1,0 +1,10 @@
+{
+  "CivicFlowStack": {
+    "DistributionIdOut": "E27GW360BEW7AT",
+    "SiteUrlOut": "https://d2ei9x9420h4oc.cloudfront.net",
+    "TableNameOut": "civicflow",
+    "ImagesBucketOut": "civicflowstack-imagesbucket1e86afb2-dfnviidpm4tp",
+    "SiteBucketOut": "civicflowstack-sitebucket397a1860-1i1bi41qqdfv",
+    "ApiUrlOut": "https://zwasktmpei.execute-api.us-east-1.amazonaws.com"
+  }
+}
