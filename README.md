@@ -2,9 +2,10 @@
 
 > **CivicFlow doesn't count complaints. It understands the problem behind them.**
 
-AWS Zero to Shipped Hackathon · Category `#social-good` · Lane `#community`
+AWS Zero to Shipped Hackathon · App category `#social-good` · Lane `#community`
 
 **Live app:** https://d2ei9x9420h4oc.cloudfront.net
+
 **Live API:** https://zwasktmpei.execute-api.us-east-1.amazonaws.com
 
 CivicFlow AI is a multimodal community issue-to-action platform. Citizens report
@@ -13,35 +14,17 @@ identifies the underlying issue, estimates severity and confidence, detects pote
 duplicate reports, groups related reports into a single community issue, prioritizes it
 transparently, and recommends a concrete action — all measured on a live dashboard.
 
-## Why it matters
+[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai?utm_source=readme&utm_medium=badge)
 
-Communities drown in duplicate complaints about the same physical problem. Three people
-report "a pothole near the school" three different ways, and the signal gets lost in the
-noise. CivicFlow treats reports as **evidence of an underlying issue**, fuses that
-evidence, and clusters related reports so staff see one prioritized problem — not three
-disconnected tickets.
 
-## What it does
+- <img width="1634" height="775" alt="zero ship v1 drawio (1)" src="https://github.com/user-attachments/assets/bdb296b9-ce19-408f-9302-d88f90ed7b7a" />
 
-Citizen evidence → multimodal AI analysis → evidence fusion → duplicate detection →
-issue clustering → prioritization → recommended action → measurable community dashboard.
 
-- **Multimodal evidence analysis** — Amazon Rekognition extracts visual evidence from
-  photos; Amazon Bedrock (Nova) reasons over text + image + nearby reports and returns a
-  structured assessment that separates **observed evidence**, **AI interpretation**, and
-  **recommended action**.
-- **Duplicate detection & clustering** — application-level similarity (semantic text
-  overlap + category + location proximity) groups related reports into one community issue.
-- **Transparent priority** — a deterministic factor model (severity, related report count,
-  recency, public infrastructure, unresolved) that is explainable, not an opaque LLM guess.
-- **Ask CivicFlow** — a real tool-using agent built on the **AWS Strands Agents SDK** that
-  retrieves live data via tools before answering, so responses are grounded in facts, never
-  invented statistics.
-- **Community dashboard** — totals, category breakdown, status distribution, and duplicate
-  clusters from real DynamoDB data.
-- **Staff controls (closing the loop)** — authorized staff advance an issue through its
-  lifecycle (NEW → AI_ANALYZED → VERIFIED → IN_PROGRESS → RESOLVED), gated by an admin key
-  and audited to CloudWatch, so the community can track real progress to resolution.
+<img width="8931" height="12863" alt="diagram (1)" src="https://github.com/user-attachments/assets/c87cfaec-4f9d-4ab6-b892-0ada742b2750" />
+
+
+<!--[![Architecture diagram of dineshrajdhanapathydd/civicflow-ai](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai/diagram.png)](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai?utm_source=readme&utm_medium=picture)-->
+
 
 ## Architecture (serverless on AWS)
 
@@ -69,6 +52,36 @@ editable draw.io file: [`docs/architecture.drawio`](docs/architecture.drawio) (o
 | ![Dashboard](docs/screenshots/01-dashboard.png) | ![Report detail with AI analysis](docs/screenshots/05-report-detail-ai.png) | ![Issue detail — 3-report cluster](docs/screenshots/04-issue-detail-cluster.png) |
 
 More in [`docs/screenshots/`](docs/screenshots/) (report form, issues list, Ask CivicFlow).
+
+
+## Why it matters
+
+Communities drown in duplicate complaints about the same physical problem. Three people
+report "a pothole near the school" three different ways, and the signal gets lost in the
+noise. CivicFlow treats reports as **evidence of an underlying issue**, fuses that
+evidence, and clusters related reports so staff see one prioritized problem — not three
+disconnected tickets.
+
+## What it does
+
+Citizen evidence → multimodal AI analysis → evidence fusion → duplicate detection →
+issue clustering → prioritization → recommended action → measurable community dashboard.
+
+- **Multimodal evidence analysis** — Amazon Rekognition extracts visual evidence from
+  photos; Amazon Bedrock (Nova) reasons over text + image + nearby reports and returns a
+  structured assessment that separates **observed evidence**, **AI interpretation**, and
+  **recommended action**.
+- **Duplicate detection & clustering** — application-level similarity (semantic text
+  overlap + category + location proximity) groups related reports into one community issue.
+- **Transparent priority** — a deterministic factor model (severity, related report count,
+  recency, public infrastructure, unresolved) that is explainable, not an opaque LLM guess.
+- **Ask CivicFlow** — a real tool-using agent built on the **AWS Strands Agents SDK** that
+  retrieves live data via tools before answering, so responses are grounded in facts, never
+  invented statistics.
+- **Community dashboard** — totals, category breakdown, status distribution, and duplicate clusters from real DynamoDB data.
+- **Staff controls (closing the loop)** — authorized staff advance an issue through its
+  lifecycle (NEW → AI_ANALYZED → VERIFIED → IN_PROGRESS → RESOLVED), gated by an admin key
+  and audited to CloudWatch, so the community can track real progress to resolution.
 
 ## AWS services
 
@@ -153,11 +166,12 @@ See [`docs/DEMO.md`](docs/DEMO.md) for the full demo script. The core story: a c
 analyzes the evidence, the system recognizes it as part of an existing issue, prioritizes
 it, recommends an action, and the dashboard measures community progress.
 
-## Hackathon submission
+<!--## Hackathon submission
 
 Category `#social-good` (focus: Climate resilience) · Lane `#community`. The full Builder
 Center submission content — pitch, tags, requirement mapping, and ship-gate checklist — is
 in [`docs/SUBMISSION.md`](docs/SUBMISSION.md).
+-->
 
 ## Built with Kiro
 
