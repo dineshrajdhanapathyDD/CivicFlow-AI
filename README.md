@@ -2,7 +2,7 @@
 
 > **CivicFlow doesn't count complaints. It understands the problem behind them.**
 
-AWS Zero to Shipped Hackathon · Category `#social-good` · Lane `#community`
+AWS Zero to Shipped Hackathon · App category `#social-good` · Lane `#community`
 
 **Live app:** https://d2ei9x9420h4oc.cloudfront.net
 
@@ -13,6 +13,20 @@ real-world problems with text, an image, or both. The system analyzes the eviden
 identifies the underlying issue, estimates severity and confidence, detects potentially
 duplicate reports, groups related reports into a single community issue, prioritizes it
 transparently, and recommends a concrete action — all measured on a live dashboard.
+
+[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai?utm_source=readme&utm_medium=badge)
+
+
+- <img width="1634" height="775" alt="zero ship v1 drawio (1)" src="https://github.com/user-attachments/assets/bdb296b9-ce19-408f-9302-d88f90ed7b7a" />
+
+
+<img width="8931" height="12863" alt="diagram (1)" src="https://github.com/user-attachments/assets/c87cfaec-4f9d-4ab6-b892-0ada742b2750" />
+
+
+<!--[![Architecture diagram of dineshrajdhanapathydd/civicflow-ai](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai/diagram.png)](https://gitdiagram.com/dineshrajdhanapathydd/civicflow-ai?utm_source=readme&utm_medium=picture)-->
+
+
+
 
 ## Why it matters
 
@@ -154,11 +168,12 @@ See [`docs/DEMO.md`](docs/DEMO.md) for the full demo script. The core story: a c
 analyzes the evidence, the system recognizes it as part of an existing issue, prioritizes
 it, recommends an action, and the dashboard measures community progress.
 
-## Hackathon submission
+<!--## Hackathon submission
 
 Category `#social-good` (focus: Climate resilience) · Lane `#community`. The full Builder
 Center submission content — pitch, tags, requirement mapping, and ship-gate checklist — is
 in [`docs/SUBMISSION.md`](docs/SUBMISSION.md).
+-->
 
 ## Built with Kiro
 
